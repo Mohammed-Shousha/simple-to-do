@@ -1,0 +1,29 @@
+.task-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.task-title {
+  font-size: 1.25em;
+  word-wrap: break-word;
+  width: 200px;
+}
+
+.task-container span {
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid #828282;
+  transition: 0.2s;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.checkbox:checked + .task-title {
+  text-decoration: line-through;
+}
